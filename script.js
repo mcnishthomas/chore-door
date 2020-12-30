@@ -4,6 +4,7 @@ const doorImage3 = document.getElementById('door3');
 const robotDoorPath = "images/robot.svg";
 const beachDoorPath = "images/beach.svg";
 const spaceDoorPath = "images/space.svg";
+let numClosedDoors = 3;
 
 doorImage1.onclick = () => {
     doorImage1.src = robotDoorPath;
@@ -15,4 +16,8 @@ doorImage2.onclick = () => {
 
 doorImage3.onclick = () => {
     doorImage3.src = spaceDoorPath;
+}
+
+randomChoreBotGenerator = () => {
+
 }
