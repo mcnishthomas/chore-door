@@ -18,6 +18,7 @@ doorImage3.onclick = () => {
     doorImage3.src = spaceDoorPath;
 }
 
-randomChoreBotGenerator = () => {
-
+randomChoreDoorGenerator = () => {
+    let choreDoor = (Math.floor(Math.random() * 3));
+    return choreDoor;
 }
