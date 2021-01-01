@@ -1,7 +1,7 @@
 const doorImage1 = document.getElementById('door1');
 const doorImage2 = document.getElementById('door2');
 const doorImage3 = document.getElementById('door3');
-const botDoorPath = "images/robot.svg";
+const botDoorPath = "file:///Users/Tom/Desktop/chore-door/images/robot.svg";
 const beachDoorPath = "images/beach.svg";
 const spaceDoorPath = "images/space.svg";
 const closedDoorPath = "images/closed_door.svg";
@@ -11,7 +11,9 @@ let openDoor2;
 let openDoor3;
 const startButton = document.getElementById('start');
 
-const isBot = (door) => {
+const isBot = door => {
+    console.log(door.src);
+    console.log(botDoorPath);
     if (door.src === botDoorPath) {
         return true;
     } else {
