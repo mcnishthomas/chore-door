@@ -60,10 +60,12 @@ body {
 .start-row {
     margin: auto;
     width: 120px;
-    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: ‘Work Sans’;
     background-color: #eb6536;
-    padding-top: 18px;
+    padding: 14px 10px;
     font-size: 18px;
     text-align: center;
     color: #010165;

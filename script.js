@@ -9,6 +9,7 @@ let numClosedDoors = 3;
 let openDoor1;
 let openDoor2;
 let openDoor3;
+const startButton = document.getElementById('start');
 
 isClicked = door => {
     if (door.src === closedDoorPath) {
@@ -21,7 +22,7 @@ isClicked = door => {
 playDoor = () => {
     numClosedDoors--;
     if (numClosedDoors === 0) {
-        gameOver();
+        gameOver('win');
     }
 }
 
@@ -43,6 +44,12 @@ doorImage3.onclick = () => {
     if (isClicked) {
         doorImage3.src = openDoor3;
         playDoor();
+    }
+}
+
+gameOver = status => {
+    if (status === 'win') {
+        startButton.innerHTML = 'You win! Play again?'
     }
 }
 
